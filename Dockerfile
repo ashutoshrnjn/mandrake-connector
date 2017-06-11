@@ -18,5 +18,4 @@ WORKDIR /home/bot-connector
 
 ADD . /home/bot-connector/
 
-RUN yarn doc
 RUN yarn install
