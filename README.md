@@ -1,4 +1,5 @@
 # mandrake.ai - Bot Connector
+[![Build Status](https://travis-ci.org/yantrashala/mandrake-connector.svg?branch=master)](https://travis-ci.org/yantrashala/mandrake-connector) [![Gitter](https://img.shields.io/gitter/room/yantrashala/nw.js.svg)](https://gitter.im/yantrashala/chat)
 
 Bot Connector allows you to connect your bot to multiple messaging channels.
 
