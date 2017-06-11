@@ -48,13 +48,6 @@ First of all, you need to create a connector with the Bot Connector's API.
 curl -X POST 'http://localhost:8080/connectors' --data 'url=YOUR_CONNECTOR_ENDPOINT_URL'
 ```
 
-Then you need some code so the Bot Connector, via the *connector* you've just created, can send you the messages it receives. You can use the code from the *example* as a starter.
-```bash
-cd example
-yarn install
-yarn start
-```
-
 Now that your bot (well, your code) and the Bot Connector are running, you have to create channels. Channel is the actual link between your connector and a specific service like Messenger, Slack or Kik. A connector can have multiple channels.
 
 ## How it works
