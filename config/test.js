@@ -1,10 +1,10 @@
 module.exports = {
   db: {
-    host: 'localhost',
+    host: 'mandrake-db',
     port: 27017,
     dbName: 'chatbot-connector-test',
   },
   server: {
-    port: 8080,
+    port: 6060,
   },
 }
