@@ -1,6 +1,4 @@
-![Bot Conector Logo](https://cdn.recast.ai/bot-connector/bot-connector-logo.png)
-
-# Bot Connector
+# mandrake.ai - Bot Connector
 
 Bot Connector allows you to connect your bot to multiple messaging channels.
 
@@ -8,11 +6,9 @@ It provides a higher level API to manage several messaging platforms at once, an
 
 ## Documentation
 
-You can see the API documentation [here](https://recastai.github.io/bot-connector/)
-
-Or generate the documentation with the following command:
+Generate the documentation with the following command:
 ```bash
-yarn doc && open doc/index.html
+docker-compose run mandrake-connector yarn doc
 ```
 
 ## Supported Channels
@@ -27,43 +23,22 @@ Bot Connector supports the following channels:
 
 You can find more information on each channel in the [wiki](https://github.com/RecastAI/bot-connector/wiki)
 
-More will be added, and you can [contribute](https://github.com/RecastAI/bot-connector/blob/master/CONTRIBUTING.md) if you want to, and add a thumbs up for the channel you want to see implemented first ;)
-(To do so, fork this repo, add a thumbs up and make a PR!)
-
-* Cisco Spark 👍👍
-* Discord 👍👍
-* Line 👍
-* Microsoft Teams 👍
-* Ryver 👍
-* Skype 👍
-* Viber
-* Wechat 👍👍
-* Zinc.it 👍
-* Twitter 👍
-* Salesforce 
-
-You can find the current roadmap [here](https://github.com/RecastAI/bot-connector/projects/1).
-
 ## Getting started
-
-The following examples use [yarn](https://github.com/yarnpkg/yarn) package manager but you can use your favorite one like npm, or pnpm.
-
-In order to run the connector you need MongoDB installed and running. The configuration files for MongoDB are stored in *config* directory.
+[Docker](https://www.docker.com/) is required to build and start mandrake. Click here for [setup instructions](https://docs.docker.com/engine/installation/)
 
 ### Installation
 
 Clone the repository and install the dependencies
 
-```sh
-git clone https://github.com/RecastAI/bot-connector.git
-cd bot-connector
-yarn install
+```bash
+git clone https://github.com/yantrashala/mandrake-connector.git
+docker-compose build
 ```
 
 #### Running in development mode (hot reload)
 
 ```bash
-yarn start-dev
+docker-compose up
 ```
 
 #### Setup your connector
@@ -178,11 +153,11 @@ Bot Connector supports several message formats:
 
 ### Issue
 
-If you encounter any issue, please follow this [guide](https://github.com/RecastAI/bot-connector/blob/master/ISSUE.md).
+If you encounter any issue, please follow this [guide](https://github.com/yantrashala/mandrake-connector/blob/master/ISSUE.md).
 
-### Contribution
+### Contribution & Coding Guidelines
 
-Want to contribute? Great! Please check this [guide](https://github.com/RecastAI/bot-connector/blob/master/CONTRIBUTING.md).
+Want to contribute? Great! Please check this [guide](https://github.com/yantrashala/mandrake-connector/blob/master/CONTRIBUTING.md).
 
 ### License
 
