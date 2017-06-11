@@ -25,3 +25,7 @@ nodes/core/locales/zz-ZZ
 model_*
 data/models/*
 test/models/*
+docs/*
+doc/*
+data/*
+data/db/*
