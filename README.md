@@ -1,4 +1,5 @@
 # mandrake.ai - Bot Connector
+[![Build Status](https://travis-ci.org/yantrashala/mandrake-connector.svg?branch=master)](https://travis-ci.org/yantrashala/mandrake-connector) [![Gitter](https://img.shields.io/gitter/room/yantrashala/nw.js.svg)](https://gitter.im/yantrashala/chat)
 
 Bot Connector allows you to connect your bot to multiple messaging channels.
 
@@ -46,13 +47,6 @@ docker-compose up
 First of all, you need to create a connector with the Bot Connector's API.
 ```sh
 curl -X POST 'http://localhost:8080/connectors' --data 'url=YOUR_CONNECTOR_ENDPOINT_URL'
-```
-
-Then you need some code so the Bot Connector, via the *connector* you've just created, can send you the messages it receives. You can use the code from the *example* as a starter.
-```bash
-cd example
-yarn install
-yarn start
 ```
 
 Now that your bot (well, your code) and the Bot Connector are running, you have to create channels. Channel is the actual link between your connector and a specific service like Messenger, Slack or Kik. A connector can have multiple channels.

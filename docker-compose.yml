@@ -11,10 +11,11 @@ services:
       - "27017:27017"
     volumes:
       - ./data/db:/data/db:rw
+
   mandrake-connector:
     user: root
     build: .
-    image: mandrake-connector
+    image: yantrashala/mandrake-connector
     restart: always
     container_name: mandrake-connector
     volumes:
